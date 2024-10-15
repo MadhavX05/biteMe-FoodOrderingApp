@@ -52,7 +52,6 @@ const Header = () => {
   const { user } = useContext(userContext);
 
   const cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems);
 
   return (
     <div className="z-60 navbar flex justify-center bg-[#28282B] h-24 pt-5 shadow-lg shadow-gray-500">

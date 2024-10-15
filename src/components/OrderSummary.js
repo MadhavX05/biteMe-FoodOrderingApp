@@ -13,9 +13,9 @@ const OrderSummary = () => {
   const totalAmt = totalPrice / 100 + deliveryCharges - discount;
   const dispatch = useDispatch();
 
-  emptyCart = () => {
+  function emptyCart() {
     dispatch(clearCart());
-  };
+  }
 
   return (
     <div className=" basis-5/12 h-fit sticky top-40">
